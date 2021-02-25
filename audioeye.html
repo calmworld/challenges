@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioEye</title>
+</head>
+<body>
+    <p>This page turns violet when you hold the V key.</p>
+    <script>
+        addEventListener("keydown", function(event) {
+            if (event.keyCode == 86)
+            document.body.style.background = "violet";
+        });
+        addEventListener("keyup", function(event) {
+            if (event.keyCode == 86)
+            document.body.style.background = "";
+        });
+    </script>
+
+    <br>
+
+    <p>Press Ctrl-Space to continue.</p>
+    <script>
+        addEventListener("keydown", function(event) {
+          if (event.keyCode == 32 && event.ctrlKey)
+            alert("Continuing!")
+            console.log("Continuing!");
+        });
+    </script>
+
+    <br>
+
+    <!-- <script>
+        document.querySelectorAll('[role="presentation"]').forEach(function (el){
+            console.log('test');
+            console.log('innerHTML: ' + el.innerHTML);
+        });
+    </script>
+    
+    <div id="toolBarId">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h1 role="presentation"></h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>someElements2</h2>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+    <!-- <h1><img src="http://pngimg.com/uploads/dog/dog_PNG50348.png" alt="" role="presentation" /></h1> -->
+</body>
+</html>

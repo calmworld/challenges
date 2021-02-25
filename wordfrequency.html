@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alhuriz, Sarah</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #frequency {
+                background-color: rgb(204, 180, 201);
+                width: 150px;
+                border: 10px solid rgb(18, 116, 182);
+                padding: 50px;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="frequency"></div>
+        
+        <script type="text/javascript">
+            function wordFrequency(string) {
+                var words = string.toLowerCase().replace(/[.]/g, '').split(/[ ,!.";:-]+/);
+                var frequencyMap = {};
+                words.forEach(function(w) {
+                    if (!frequencyMap[w]) {
+                        frequencyMap[w] = 0;
+                    }
+                    frequencyMap[w] += 1;
+                });
+                if(frequencyMap[""]){delete(frequencyMap[""])}
+                return frequencyMap;
+            }
+
+            var input = wordFrequency("Anyway, I keep picturing all these little kids playing some game in this big field of rye and all. Thousands of little kids, and nobody's around - nobody big, I mean - except me. And I'm standing on the edge of some crazy cliff. What I have to do, I have to catch everybody if they start to go over the cliff - I mean if they're running and they don't look where they're going I have to come out from somewhere and catch them. That's all I do all day. I'd just be the catcher in the rye and all. I know it's crazy, but that's the only thing I'd really like to be. ");
+            Object.keys(input).sort().forEach(function(word) {
+                var sorted = "count of: " + word + " = " + input[word];
+                console.log(sorted);
+                document.getElementById('frequency').innerHTML +=
+                `<tr>
+                    <li>
+                        <td>${word}</td> = 
+                        <td>${input[word]}</td><br>
+                    </li>
+                </tr>`;
+            });
+        </script>
+    </body>
+</html>
