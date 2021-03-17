@@ -1,3 +1,5 @@
+//Count array of objects that have a value
+
 var arr = [ 
         { id: '1', '': '' },
         { id: '2', '': '' },
