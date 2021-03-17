@@ -21,26 +21,6 @@
 // Let’s talk about your plan of attack before you start coding, and remember
 // to keep talking me through what you are doing as you code.
 
-// function junior(people) {
-//   //create a result array
-//   let result = [];
-//   let juniors = 0;
-//   //loop through array of objects
-//   for (let i = 0; i <= people.length; i++) {
-//     people[i].firstName == "john";
-//     people[i][1];
-//     people[i][2];
-//   }
-
-//   result.push(people[i].firstName);
-
-//   if (juniors > results) {
-//     juniors += results;
-//   }
-
-//   return junior;
-// }
-
 
 const people = [
     {firstName: "John",  lastName: "Doe",   age: 13},
@@ -72,3 +52,28 @@ function findLongestJuniorFam(people) {
 }
 
 console.log(findLongestJuniorFam(people))
+
+
+
+
+
+//First attempt - not the best approach
+// function junior(people) {
+//   //create a result array
+//   let result = [];
+//   let juniors = 0;
+//   //loop through array of objects
+//   for (let i = 0; i <= people.length; i++) {
+//     people[i].firstName == "john";
+//     people[i][1];
+//     people[i][2];
+//   }
+
+//   result.push(people[i].firstName);
+
+//   if (juniors > results) {
+//     juniors += results;
+//   }
+
+//   return junior;
+// }
