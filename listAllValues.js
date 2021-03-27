@@ -29,11 +29,10 @@ var output = listAllValues({
 });
 console.log(output); //--> ['Krysten', 33, false]
 
-
 var output = listAllValues({
-    a: "a",
-    number: 11,
-    hungry: true,
-    grammyWins: 1,
-  });
-  console.log(output); //--> ['a', 11, true, 1]
+  a: "a",
+  number: 11,
+  hungry: true,
+  grammyWins: 1,
+});
+console.log(output); //--> ['a', 11, true, 1]
