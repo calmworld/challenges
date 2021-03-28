@@ -44,3 +44,11 @@ function greetCustomer(firstName) {
   }
 }
 
+var output = greetCustomer("Terrance");
+console.log(output); // --> 'Welcome! Is this your first time?'
+
+var output = greetCustomer("Joe");
+console.log(output); // --> 'Welcome back, Joe! We're glad you liked us the first time!'
+
+var output = greetCustomer("Carol");
+console.log(output); // --> 'Welcome back, Carol! So glad to see you again!'
