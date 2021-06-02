@@ -46,8 +46,7 @@ def countManipulations(s1, s2):
     # iterate though the first String
     # and update count
     for i in range(len( s1)):
-        char_count[ord(s1[i]) -
-                   ord('a')] += 1
+        char_count[ord(s1[i]) - ord('a')] += 1
  
     # iterate through the second string
     # update char_count.
@@ -59,8 +58,6 @@ def countManipulations(s1, s2):
     for i in range(26):
         if char_count[i] != 0:
             count += abs(char_count[i])
-         
- 
     return count
  
 # Driver code
@@ -69,6 +66,4 @@ if __name__ == "__main__":
     s1 = "ddcf"
     s2 = "cedk"
      
-    print(countManipulations(s1, s2))
- 
-# This code is contributed by ita_c
+    print(countManipulations(s1, s2)) #4
